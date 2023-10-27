@@ -31,6 +31,12 @@ function generatePassword() {
   if (useNumbers) characters += numberChars;
   if (useSpecial) characters += specialChars;
 
+  // Check if at least one character set is selected
+  if (characters === '') {
+    alert("Please select at least one character set.");
+    return '';
+  }
+
   return password;
 }
 
