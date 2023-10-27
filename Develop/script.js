@@ -24,6 +24,13 @@ function generatePassword() {
   var useNumbers = confirm("Include numbers?");
   var useSpecial = confirm("Include special characters?");
 
+  // Build character set based on user selections
+  var characters = '';
+  if (useUppercase) characters += uppercaseChars;
+  if (useLowercase) characters += lowercaseChars;
+  if (useNumbers) characters += numberChars;
+  if (useSpecial) characters += specialChars;
+
   return password;
 }
 
