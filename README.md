@@ -2,9 +2,7 @@
 
 ## Description
 
-```
 A Password Generator app to help create a secure password. Will prompt user to specify length and various character types to create a randomly generated password. Written in JavaScript
-```
 
 ## Mock-Up
 
