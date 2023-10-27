@@ -8,5 +8,5 @@ A Password Generator app to help create a secure password. Will prompt user to s
 
 The following image shows the web application's appearance and functionality:
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+![The Password Generator application displays a green button to "Generate Password".](./Assets/Screenshot.png)
 
