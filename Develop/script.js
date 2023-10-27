@@ -31,10 +31,17 @@ function generatePassword() {
   if (useNumbers) characters += numberChars;
   if (useSpecial) characters += specialChars;
 
-  // Check if at least one character set is selected
+  // Check at least one character set selected
   if (characters === '') {
     alert("Please select at least one character set.");
     return '';
+  }
+
+  // Generate password
+  var password = '';
+  for (var i = 0; i < passwordLength; i++) {
+    var randomIndex = Math.floor(Math.random() * characters.length);
+    password += characters.charAt(randomIndex);
   }
 
   return password;
